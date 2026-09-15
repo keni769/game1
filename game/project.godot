@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="game"
+run/main_scene="uid://b8y7dd5itfa1i"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/stretch/mode="viewport"
 
 [editor_plugins]
 

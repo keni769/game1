@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://b8y7dd5itfa1i"]
+
+[ext_resource type="Script" uid="uid://b54sipg5yvcum" path="res://title_screen.gd" id="1_ak2if"]
+[ext_resource type="Texture2D" uid="uid://cmsunywnrf3cr" path="res://icon.svg" id="1_v6p8y"]
+
+[node name="Node2D" type="Node2D" unique_id=1413754358]
+script = ExtResource("1_ak2if")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1238045212]
+offset_left = -3.0
+offset_right = 1210.0
+offset_bottom = 705.0
+texture = ExtResource("1_v6p8y")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=581613365]
+clip_contents = false
+offset_left = 274.0
+offset_top = 8.0
+offset_right = 926.0
+offset_bottom = 427.0
+theme_override_constants/outline_size = 40
+theme_override_constants/underline_alpha = 50
+theme_override_font_sizes/normal_font_size = 108
+text = "TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1812001851]
+offset_left = 503.0
+offset_top = 323.0
+offset_right = 543.0
+offset_bottom = 363.0
+
+[node name="startgame" type="Button" parent="VBoxContainer" unique_id=1567519011]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Start Game"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1775583797]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1019738912]
+layout_mode = 2
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/startgame" to="." method="_on_startgame_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

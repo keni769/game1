@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://b54sipg5yvcum" path="res://title_screen.gd" id="1_ak2if"]
-[ext_resource type="Texture2D" uid="uid://jea8mmwxe8gg" path="res://polka-dot-pattern-background-simple-design-vector_53876-143517.webp" id="2_ak2if"]
+[ext_resource type="Texture2D" uid="uid://b8slqvrgrrpi6" path="res://Untitled (1).png" id="2_ig5kc"]
+[ext_resource type="Texture2D" uid="uid://dfkafa3h83wfd" path="res://panel-transparent-center-005.png" id="3_05l2w"]
+
+[sub_resource type="Theme" id="Theme_2fhnn"]
 
 [node name="Node2D" type="Node2D" unique_id=1413754358]
 script = ExtResource("1_ak2if")
@@ -11,8 +14,35 @@ offset_left = -17.0
 offset_top = -36.0
 offset_right = 1393.0
 offset_bottom = 749.0
-texture = ExtResource("2_ak2if")
+texture = ExtResource("2_ig5kc")
 stretch_mode = 4
+flip_h = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1254514722]
+offset_left = 503.0
+offset_top = 323.0
+offset_right = 652.0
+offset_bottom = 367.0
+texture = ExtResource("3_05l2w")
+expand_mode = 1
+flip_h = true
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=374453658]
+offset_left = 503.0
+offset_top = 371.0
+offset_right = 652.0
+offset_bottom = 415.0
+texture = ExtResource("3_05l2w")
+expand_mode = 1
+flip_h = true
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=2126298193]
+offset_left = 503.0
+offset_top = 419.0
+offset_right = 652.0
+offset_bottom = 463.0
+texture = ExtResource("3_05l2w")
+expand_mode = 1
 flip_h = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=581613365]
@@ -36,6 +66,7 @@ offset_bottom = 363.0
 
 [node name="startgame" type="Button" parent="VBoxContainer" unique_id=1567519011]
 layout_mode = 2
+theme = SubResource("Theme_2fhnn")
 theme_override_constants/outline_size = 14
 theme_override_font_sizes/font_size = 26
 text = "Start Game"

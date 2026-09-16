@@ -1,3 +1,25 @@
 [gd_scene format=3 uid="uid://db0aohgulb56g"]
 
+[ext_resource type="Texture2D" uid="uid://b8slqvrgrrpi6" path="res://Untitled (1).png" id="1_u52ul"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2fhnn"]
+
 [node name="level" type="Node2D" unique_id=1831971547]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1556892721]
+offset_right = 1152.0
+offset_bottom = 659.0
+texture = ExtResource("1_u52ul")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1685622488]
+offset_left = 136.00003
+offset_top = 250.0
+offset_right = 140.29877
+offset_bottom = 276.4
+scale = Vector2(100, 10)
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1190659963]
+layout_mode = 2
+texture = SubResource("NoiseTexture2D_2fhnn")
+expand_mode = 1
+stretch_mode = 4

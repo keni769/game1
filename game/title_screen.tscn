@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://b54sipg5yvcum" path="res://title_screen.gd" id="1_ak2if"]
-[ext_resource type="Texture2D" uid="uid://cmsunywnrf3cr" path="res://icon.svg" id="1_v6p8y"]
+[ext_resource type="Texture2D" uid="uid://jea8mmwxe8gg" path="res://polka-dot-pattern-background-simple-design-vector_53876-143517.webp" id="2_ak2if"]
 
 [node name="Node2D" type="Node2D" unique_id=1413754358]
 script = ExtResource("1_ak2if")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1238045212]
-offset_left = -3.0
-offset_right = 1210.0
-offset_bottom = 705.0
-texture = ExtResource("1_v6p8y")
+offset_left = -17.0
+offset_top = -36.0
+offset_right = 1393.0
+offset_bottom = 749.0
+texture = ExtResource("2_ak2if")
+stretch_mode = 4
+flip_h = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=581613365]
 clip_contents = false

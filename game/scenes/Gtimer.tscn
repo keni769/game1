@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://svwag6t4qwea"]
 
-[ext_resource type="Script" uid="uid://dorqfacf1x4ea" path="res://Timer2.gd" id="1_25nhu"]
+[ext_resource type="Script" uid="uid://dorqfacf1x4ea" path="res://ThemedTimer.gd" id="1_25nhu"]
 
 [node name="Node2D" type="Node2D" unique_id=780773625]
 script = ExtResource("1_25nhu")

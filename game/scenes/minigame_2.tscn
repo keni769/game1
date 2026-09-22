@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://bwjhebp2dqrpn"]
+
+[ext_resource type="Script" uid="uid://4h67cojm2hwq" path="res://minigame_2.gd" id="1_6co8m"]
+[ext_resource type="Texture2D" uid="uid://b8slqvrgrrpi6" path="res://Untitled (1).png" id="2_tbdge"]
+[ext_resource type="Texture2D" uid="uid://bsos4da56nt1m" path="res://fruit-blueberry-european-blueberry-berries-bog-bilberry-cartoon-vaccinium-cobalt-blue-png-clipart-thumbnail-removebg-preview (1).png" id="3_my5wa"]
+[ext_resource type="Script" uid="uid://cslg0ggat07l1" path="res://button_1.gd" id="4_r0kah"]
+[ext_resource type="Script" uid="uid://idwsvaue1fdm" path="res://button_2.gd" id="5_q3ivc"]
+[ext_resource type="Script" uid="uid://bglj27nche712" path="res://button_3.gd" id="6_srbim"]
+[ext_resource type="Script" uid="uid://ckc6o16qo3eve" path="res://button_4.gd" id="7_6kqj5"]
+[ext_resource type="Script" uid="uid://dgo8e5vo51d2c" path="res://button_5.gd" id="8_xkm0r"]
+[ext_resource type="PackedScene" uid="uid://svwag6t4qwea" path="res://scenes/Gtimer.tscn" id="9_otdci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38v6o"]
+size = Vector2(1157, 162.5)
+
+[node name="Minigame_2" type="Node2D" unique_id=1080899678]
+script = ExtResource("1_6co8m")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1921089673]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+follow_viewport = false
+
+[node name="Background" type="TextureRect" parent="Parallax2D" unique_id=17256428]
+offset_left = -1395.9999
+offset_top = -897.9999
+offset_right = -243.99988
+offset_bottom = -249.99988
+scale = Vector2(3.7984965, 3.9377415)
+texture = ExtResource("2_tbdge")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=497055630]
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=1751942914]
+offset_top = 558.0
+offset_right = 1157.0
+offset_bottom = 721.0
+scale = Vector2(3.7012987, 1)
+color = Color(0.27058825, 0.7019608, 0.8784314, 1)
+
+[node name="col1" type="CollisionShape2D" parent="StaticBody2D" unique_id=1570571334]
+position = Vector2(577.5, 640.25)
+scale = Vector2(3.7012987, 1)
+shape = SubResource("RectangleShape2D_38v6o")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1624560029]
+offset_left = 235.99998
+offset_top = 143.99998
+offset_right = 536.0
+offset_bottom = 461.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_my5wa")
+script = ExtResource("4_r0kah")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=372018822]
+offset_left = 887.99994
+offset_top = 38.000023
+offset_right = 1188.0
+offset_bottom = 355.00003
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_my5wa")
+script = ExtResource("5_q3ivc")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=870453009]
+offset_left = 681.99994
+offset_top = 386.0
+offset_right = 981.99994
+offset_bottom = 703.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_my5wa")
+script = ExtResource("6_srbim")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=689275044]
+offset_left = 530.99994
+offset_top = 47.000023
+offset_right = 830.99994
+offset_bottom = 364.00003
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_my5wa")
+script = ExtResource("7_6kqj5")
+
+[node name="Button_5" type="TextureButton" parent="." unique_id=489102943]
+offset_left = 400.00006
+offset_top = 355.99997
+offset_right = 700.00006
+offset_bottom = 673.0
+scale = Vector2(0.4, 0.4)
+texture_normal = ExtResource("3_my5wa")
+script = ExtResource("8_xkm0r")
+
+[node name="ThemedTimer" parent="." unique_id=780773625 instance=ExtResource("9_otdci")]
+position = Vector2(685, 487)
+
+[node name="timer" type="RichTextLabel" parent="ThemedTimer" unique_id=1682239135]
+offset_left = 244.99998
+offset_top = -201.00003
+offset_right = 257.09998
+offset_bottom = -193.90002
+scale = Vector2(10, 10)
+
+[connection signal="pressed" from="Button_1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]
+[connection signal="pressed" from="Button_5" to="Button_5" method="_on_pressed"]

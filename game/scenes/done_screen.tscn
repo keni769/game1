@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://b3s2ebeof5men"]
+
+[ext_resource type="Texture2D" uid="uid://buo78bisynrlo" path="res://808613984_1405623305108421_3845232239283589649_n.jpg" id="1_7avge"]
+
+[node name="Node2D" type="Node2D" unique_id=1760203218]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=626454487]
+offset_right = 247.0654
+offset_bottom = 320.0
+scale = Vector2(4.634401, 2.0000002)
+texture = ExtResource("1_7avge")
+expand_mode = 1

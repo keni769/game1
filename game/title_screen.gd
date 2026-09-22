@@ -12,12 +12,11 @@ func _ready() -> void:
 
 func start_game() -> void:
 	Global.minigames_done = 0
-	Global.lives = 5
+	Global.lives = 3
 
 	get_tree().change_scene_to_file(
 		"res://scenes/timer_screen.tscn"
 	)
-
 
 func _on_startgame_pressed() -> void:
 	pass # Replace with function body.

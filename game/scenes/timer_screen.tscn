@@ -32,10 +32,12 @@ layout_mode = 2
 texture = ExtResource("3_bseyb")
 
 [node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1847358448]
+visible = false
 layout_mode = 2
 texture = ExtResource("3_bseyb")
 
 [node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1978910738]
+visible = false
 layout_mode = 2
 texture = ExtResource("3_bseyb")
 

@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://svwag6t4qwea" path="res://scenes/Gtimer.tscn" id="7_6n0yg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qlupe"]
-size = Vector2(1157, 162.5)
+size = Vector2(923.10876, 162.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hvi2"]
 size = Vector2(1157, 62.8739)
@@ -97,24 +97,24 @@ offset_bottom = -249.99988
 scale = Vector2(3.7984965, 3.9377415)
 texture = ExtResource("2_xpvfh")
 
+[node name="Tesxts" type="Sprite2D" parent="." unique_id=1630522273]
+position = Vector2(68, 309)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_r58ir")
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=49025431]
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=98314368]
 offset_top = 558.0
-offset_right = 1157.0
+offset_right = 501.4456
 offset_bottom = 721.0
 scale = Vector2(3.7012987, 1)
 color = Color(0.27058825, 0.7019608, 0.8784314, 1)
 
 [node name="col1" type="CollisionShape2D" parent="StaticBody2D" unique_id=1725911476]
-position = Vector2(577.5, 640.25)
+position = Vector2(144.64932, 640.25)
 scale = Vector2(3.7012987, 1)
 shape = SubResource("RectangleShape2D_qlupe")
-
-[node name="Tesxts" type="Sprite2D" parent="StaticBody2D" unique_id=1630522273]
-position = Vector2(146, 165)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("3_r58ir")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1870118094]
 position = Vector2(477, 220.00002)
@@ -127,6 +127,20 @@ offset_bottom = 624.45435
 color = Color(0.27058825, 0.7019608, 0.8784314, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1896294029]
+position = Vector2(577.5, 590.437)
+shape = SubResource("RectangleShape2D_0hvi2")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=815156034]
+position = Vector2(610, 111.000015)
+scale = Vector2(1, 0.38753837)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D4" unique_id=1217630053]
+offset_top = 558.0
+offset_right = 1157.0
+offset_bottom = 624.45435
+color = Color(0.27058825, 0.7019608, 0.8784314, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=881512296]
 position = Vector2(577.5, 590.437)
 shape = SubResource("RectangleShape2D_0hvi2")
 
@@ -159,24 +173,68 @@ limit_right = 1152
 limit_bottom = 648
 drag_horizontal_enabled = true
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1840702196]
+[node name="BlueB" type="Node2D" parent="." unique_id=1840702196]
 position = Vector2(685, 487)
 script = ExtResource("5_1digs")
 
-[node name="TextureRect" type="TextureRect" parent="Node2D" unique_id=1697993363]
+[node name="TextureRect" type="TextureRect" parent="BlueB" unique_id=1697993363]
 offset_right = 300.0
 offset_bottom = 317.0
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_00jeu")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=1503680657]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlueB" unique_id=1503680657]
 libraries/ = SubResource("AnimationLibrary_jife1")
 
-[node name="Area2D" type="Area2D" parent="Node2D" unique_id=1542139036]
+[node name="Area2D" type="Area2D" parent="BlueB" unique_id=1542139036]
 position = Vector2(32, 36)
 scale = Vector2(-2.6199996, 2.8050046)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" unique_id=481268693]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueB/Area2D" unique_id=481268693]
+position = Vector2(0.76333225, -1.0695171)
+scale = Vector2(1, 0.91443866)
+shape = SubResource("CircleShape2D_qlupe")
+
+[node name="BlueB2" type="Node2D" parent="." unique_id=936142607]
+position = Vector2(217, 136)
+script = ExtResource("5_1digs")
+
+[node name="TextureRect" type="TextureRect" parent="BlueB2" unique_id=1456606654]
+offset_right = 300.0
+offset_bottom = 317.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_00jeu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlueB2" unique_id=276790968]
+libraries/ = SubResource("AnimationLibrary_jife1")
+
+[node name="Area2D" type="Area2D" parent="BlueB2" unique_id=130824751]
+position = Vector2(32, 36)
+scale = Vector2(-2.6199996, 2.8050046)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueB2/Area2D" unique_id=103095445]
+position = Vector2(0.76333225, -1.0695171)
+scale = Vector2(1, 0.91443866)
+shape = SubResource("CircleShape2D_qlupe")
+
+[node name="BlueB3" type="Node2D" parent="." unique_id=112037686]
+position = Vector2(2035, 160)
+script = ExtResource("5_1digs")
+
+[node name="TextureRect" type="TextureRect" parent="BlueB3" unique_id=515542688]
+offset_right = 300.0
+offset_bottom = 317.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_00jeu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlueB3" unique_id=1012559299]
+libraries/ = SubResource("AnimationLibrary_jife1")
+
+[node name="Area2D" type="Area2D" parent="BlueB3" unique_id=644284964]
+position = Vector2(32, 36)
+scale = Vector2(-2.6199996, 2.8050046)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueB3/Area2D" unique_id=155547570]
 position = Vector2(0.76333225, -1.0695171)
 scale = Vector2(1, 0.91443866)
 shape = SubResource("CircleShape2D_qlupe")
@@ -185,10 +243,13 @@ shape = SubResource("CircleShape2D_qlupe")
 position = Vector2(685, 487)
 
 [node name="timer" type="RichTextLabel" parent="ThemedTimer" unique_id=1369382860]
-offset_left = -593.99994
-offset_top = -396.00003
-offset_right = -487.99994
-offset_bottom = -363.00003
-scale = Vector2(10, 10)
+offset_left = -676.0
+offset_top = -105.0
+offset_right = -570.0
+offset_bottom = -72.0
+scale = Vector2(2.3162544, 1.9485555)
+theme_override_constants/outline_size = 20
 
-[connection signal="garlic_collected" from="Node2D" to="." method="_on_node_2d_garlic_collected"]
+[connection signal="garlic_collected" from="BlueB" to="." method="_on_node_2d_garlic_collected"]
+[connection signal="garlic_collected" from="BlueB2" to="." method="_on_node_2d_garlic_collected"]
+[connection signal="garlic_collected" from="BlueB3" to="." method="_on_node_2d_garlic_collected"]

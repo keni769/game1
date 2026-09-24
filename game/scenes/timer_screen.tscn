@@ -1,22 +1,31 @@
 [gd_scene format=3 uid="uid://db0aohgulb56g"]
 
 [ext_resource type="Script" uid="uid://w7i0daihij7k" path="res://timer_screen.gd" id="1_xna03"]
-[ext_resource type="Texture2D" uid="uid://b8slqvrgrrpi6" path="res://Untitled (1).png" id="2_0bi17"]
+[ext_resource type="Texture2D" uid="uid://pexc6m8s4txh" path="res://Untitled (3).png" id="2_xna03"]
 [ext_resource type="Texture2D" uid="uid://bsos4da56nt1m" path="res://fruit-blueberry-european-blueberry-berries-bog-bilberry-cartoon-vaccinium-cobalt-blue-png-clipart-thumbnail-removebg-preview (1).png" id="3_bseyb"]
 
 [node name="level" type="Node2D" unique_id=1831971547]
 script = ExtResource("1_xna03")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1556892721]
-offset_right = 1152.0
-offset_bottom = 659.0
-texture = ExtResource("2_0bi17")
+offset_right = 1057.0
+offset_bottom = 1000.0
+texture = ExtResource("2_xna03")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=129954358]
+offset_left = 456.0
+offset_top = 434.0
+offset_right = 581.0
+offset_bottom = 546.0
+theme_override_colors/default_color = Color(0.79320323, 0.48917466, 0.29594117, 1)
+theme_override_font_sizes/normal_font_size = 76
+text = "0.0"
 
 [node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1685622488]
-offset_left = 209.0
-offset_top = 104.0
-offset_right = 1725.0
-offset_bottom = 1194.0
+offset_left = 274.0
+offset_top = 251.0
+offset_right = 1790.0
+offset_bottom = 1341.0
 scale = Vector2(0.5, 0.135)
 
 [node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1190659963]
@@ -42,19 +51,10 @@ layout_mode = 2
 texture = ExtResource("3_bseyb")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=95407244]
-offset_left = 549.0
-offset_top = 268.0
-offset_right = 966.0
-offset_bottom = 582.0
+offset_left = 456.0
+offset_top = 417.0
+offset_right = 873.0
+offset_bottom = 731.0
 theme_override_colors/default_color = Color(0.8527307, 0.39168012, 0.037004076, 1)
 theme_override_font_sizes/normal_font_size = 34
 text = "Level #"
-
-[node name="timer" type="RichTextLabel" parent="." unique_id=129954358]
-offset_left = 549.0
-offset_top = 285.0
-offset_right = 674.0
-offset_bottom = 397.0
-theme_override_colors/default_color = Color(0.79320323, 0.48917466, 0.29594117, 1)
-theme_override_font_sizes/normal_font_size = 76
-text = "0.0"

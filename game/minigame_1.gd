@@ -8,7 +8,7 @@ var finished = false
 
 
 func _ready() -> void:
-	await themed_timer.Timer(100.0)
+	await themed_timer.Timer(15.0)
 
 	if not finished:
 		timer_end = true

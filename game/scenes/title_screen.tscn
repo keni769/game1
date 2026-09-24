@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://b54sipg5yvcum" path="res://title_screen.gd" id="1_s4lrb"]
-[ext_resource type="Texture2D" uid="uid://b8slqvrgrrpi6" path="res://Untitled (1).png" id="2_mgrm8"]
+[ext_resource type="Texture2D" uid="uid://pexc6m8s4txh" path="res://Untitled (3).png" id="2_s4lrb"]
 [ext_resource type="Texture2D" uid="uid://dfkafa3h83wfd" path="res://panel-transparent-center-005.png" id="3_dc4i4"]
 
 [sub_resource type="Theme" id="Theme_2fhnn"]
@@ -10,47 +10,20 @@
 script = ExtResource("1_s4lrb")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1238045212]
-offset_left = -17.0
-offset_top = -36.0
-offset_right = 1393.0
-offset_bottom = 749.0
-texture = ExtResource("2_mgrm8")
-stretch_mode = 4
-flip_h = true
-
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=1254514722]
-offset_left = 503.0
-offset_top = 323.0
-offset_right = 652.0
-offset_bottom = 367.0
-texture = ExtResource("3_dc4i4")
-expand_mode = 1
-flip_h = true
-
-[node name="TextureRect4" type="TextureRect" parent="." unique_id=374453658]
-offset_left = 503.0
-offset_top = 371.0
-offset_right = 652.0
-offset_bottom = 415.0
-texture = ExtResource("3_dc4i4")
-expand_mode = 1
-flip_h = true
-
-[node name="TextureRect5" type="TextureRect" parent="." unique_id=2126298193]
-offset_left = 503.0
-offset_top = 419.0
-offset_right = 652.0
-offset_bottom = 463.0
-texture = ExtResource("3_dc4i4")
+offset_left = -2.0
+offset_top = -4.0
+offset_right = 1009.0
+offset_bottom = 1008.0
+texture = ExtResource("2_s4lrb")
 expand_mode = 1
 flip_h = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=581613365]
 clip_contents = false
-offset_left = 274.0
-offset_top = 8.0
-offset_right = 926.0
-offset_bottom = 427.0
+offset_left = 180.0
+offset_top = 210.0
+offset_right = 832.0
+offset_bottom = 629.0
 theme_override_constants/outline_size = 40
 theme_override_constants/underline_alpha = 50
 theme_override_font_sizes/normal_font_size = 108
@@ -58,11 +31,38 @@ text = "TITLE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1254514722]
+offset_left = 433.0
+offset_top = 495.0
+offset_right = 582.0
+offset_bottom = 539.0
+texture = ExtResource("3_dc4i4")
+expand_mode = 1
+flip_h = true
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=374453658]
+offset_left = 433.0
+offset_top = 543.0
+offset_right = 582.0
+offset_bottom = 587.0
+texture = ExtResource("3_dc4i4")
+expand_mode = 1
+flip_h = true
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=2126298193]
+offset_left = 433.0
+offset_top = 591.0
+offset_right = 582.0
+offset_bottom = 635.0
+texture = ExtResource("3_dc4i4")
+expand_mode = 1
+flip_h = true
+
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1812001851]
-offset_left = 503.0
-offset_top = 323.0
-offset_right = 543.0
-offset_bottom = 363.0
+offset_left = 433.0
+offset_top = 495.0
+offset_right = 582.0
+offset_bottom = 635.0
 
 [node name="startgame" type="Button" parent="VBoxContainer" unique_id=1567519011]
 layout_mode = 2

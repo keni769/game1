@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://svwag6t4qwea" path="res://scenes/Gtimer.tscn" id="7_6n0yg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qlupe"]
-size = Vector2(923.10876, 162.5)
+size = Vector2(592.49475, 163.49997)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hvi2"]
 size = Vector2(1157, 62.8739)
@@ -85,9 +85,11 @@ _data = {
 script = ExtResource("1_vc5od")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=2004309106]
-repeat_size = Vector2(1000, 0)
+scroll_offset = Vector2(0, 714)
+repeat_size = Vector2(2000, 1000)
 autoscroll = Vector2(100, 0)
 follow_viewport = false
+ignore_camera_scroll = true
 
 [node name="Background" type="TextureRect" parent="Parallax2D" unique_id=1497148747]
 offset_left = -1395.9999
@@ -96,13 +98,16 @@ offset_right = -243.99988
 offset_bottom = -249.99988
 scale = Vector2(3.7984965, 3.9377415)
 texture = ExtResource("2_xpvfh")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tesxts" type="Sprite2D" parent="." unique_id=1630522273]
-position = Vector2(68, 309)
+position = Vector2(68, 664)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("3_r58ir")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=49025431]
+position = Vector2(0, 355)
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=98314368]
 offset_top = 558.0
@@ -110,14 +115,15 @@ offset_right = 501.4456
 offset_bottom = 721.0
 scale = Vector2(3.7012987, 1)
 color = Color(0.27058825, 0.7019608, 0.8784314, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="col1" type="CollisionShape2D" parent="StaticBody2D" unique_id=1725911476]
-position = Vector2(144.64932, 640.25)
+position = Vector2(756.5, 639.75006)
 scale = Vector2(3.7012987, 1)
 shape = SubResource("RectangleShape2D_qlupe")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1870118094]
-position = Vector2(477, 220.00002)
+position = Vector2(477, 575)
 scale = Vector2(1, 0.38753837)
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D2" unique_id=673286601]
@@ -131,7 +137,7 @@ position = Vector2(577.5, 590.437)
 shape = SubResource("RectangleShape2D_0hvi2")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=815156034]
-position = Vector2(610, 111.000015)
+position = Vector2(610, 466)
 scale = Vector2(1, 0.38753837)
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D4" unique_id=1217630053]
@@ -145,7 +151,7 @@ position = Vector2(577.5, 590.437)
 shape = SubResource("RectangleShape2D_0hvi2")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=901024256]
-position = Vector2(866, -598)
+position = Vector2(866, -243)
 rotation = 1.5707964
 scale = Vector2(1, 0.38753837)
 
@@ -160,21 +166,8 @@ color = Color(0.27058825, 0.7019608, 0.8784314, 1)
 position = Vector2(1106.5, 590.437)
 shape = SubResource("RectangleShape2D_r6gmb")
 
-[node name="Player" parent="." unique_id=820917427 instance=ExtResource("4_oxfl2")]
-position = Vector2(85, 510.00003)
-scale = Vector2(5, 6.593)
-
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1451831029]
-visible = false
-limit_enabled = false
-limit_left = 0
-limit_top = 0
-limit_right = 1152
-limit_bottom = 648
-drag_horizontal_enabled = true
-
 [node name="BlueB" type="Node2D" parent="." unique_id=1840702196]
-position = Vector2(685, 487)
+position = Vector2(685, 842)
 script = ExtResource("5_1digs")
 
 [node name="TextureRect" type="TextureRect" parent="BlueB" unique_id=1697993363]
@@ -182,6 +175,7 @@ offset_right = 300.0
 offset_bottom = 317.0
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_00jeu")
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BlueB" unique_id=1503680657]
 libraries/ = SubResource("AnimationLibrary_jife1")
@@ -196,7 +190,7 @@ scale = Vector2(1, 0.91443866)
 shape = SubResource("CircleShape2D_qlupe")
 
 [node name="BlueB2" type="Node2D" parent="." unique_id=936142607]
-position = Vector2(217, 136)
+position = Vector2(217, 491)
 script = ExtResource("5_1digs")
 
 [node name="TextureRect" type="TextureRect" parent="BlueB2" unique_id=1456606654]
@@ -218,7 +212,7 @@ scale = Vector2(1, 0.91443866)
 shape = SubResource("CircleShape2D_qlupe")
 
 [node name="BlueB3" type="Node2D" parent="." unique_id=112037686]
-position = Vector2(2035, 160)
+position = Vector2(2035, 515)
 script = ExtResource("5_1digs")
 
 [node name="TextureRect" type="TextureRect" parent="BlueB3" unique_id=515542688]
@@ -226,6 +220,7 @@ offset_right = 300.0
 offset_bottom = 317.0
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_00jeu")
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="BlueB3" unique_id=1012559299]
 libraries/ = SubResource("AnimationLibrary_jife1")
@@ -240,7 +235,7 @@ scale = Vector2(1, 0.91443866)
 shape = SubResource("CircleShape2D_qlupe")
 
 [node name="ThemedTimer" parent="." unique_id=780773625 instance=ExtResource("7_6n0yg")]
-position = Vector2(685, 487)
+position = Vector2(685, 842)
 
 [node name="timer" type="RichTextLabel" parent="ThemedTimer" unique_id=1369382860]
 offset_left = -676.0
@@ -249,6 +244,22 @@ offset_right = -570.0
 offset_bottom = -72.0
 scale = Vector2(2.3162544, 1.9485555)
 theme_override_constants/outline_size = 20
+
+[node name="Player" parent="." unique_id=820917427 instance=ExtResource("4_oxfl2")]
+position = Vector2(85, 865)
+scale = Vector2(5, 6.593)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1451831029]
+position = Vector2(0, -0.15168071)
+scale = Vector2(0.4160002, 1.1941453)
+offset = Vector2(0, -1.06)
+zoom = Vector2(1.2, 1.2)
+limit_enabled = false
+limit_left = 0
+limit_top = 0
+limit_right = 1152
+limit_bottom = 648
+drag_horizontal_enabled = true
 
 [connection signal="garlic_collected" from="BlueB" to="." method="_on_node_2d_garlic_collected"]
 [connection signal="garlic_collected" from="BlueB2" to="." method="_on_node_2d_garlic_collected"]
